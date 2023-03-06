@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+    background-color: var(--bg-dark-blue);
+    border: 3px solid var(--el-dark-blue);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--el-dark-blue);
+}
+
+body {
+    background-color: var(--bg-dark-blue);
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.header {
+    width: 100%;
+    height: 70px;
+    background-color: var(--el-dark-blue);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+}
+
+.title_header {
+    font-size: 30px;
+    text-decoration: none;
+    color: var(--txt-dark);
+    margin-left: 80px;
+    font-weight: 600;
+}
+
+.head_body_home {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    margin-right: 80px;
+    margin-left: 80px;
+}
+
+.form_search {
+    width: 400px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.form_search input {
+    width: 100%;
+    padding: 17px 14px;
+    outline: 0;
+    border: 0;
+    font-size: 19px;
+    letter-spacing: 0.5px;
+    background-color: var(--el-dark-blue);
+    color: white;
+}
+
+::placeholder {
+    color: white;
+}
+
+.filter_region {
+    width: 200px;
+    position: relative;
+    background-color: var(--el-dark-blue);
+    border-radius: 5px;
+}
+
+.btn_filter_region {
+    width: 100%;
+    padding: 17px 14px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.btn_filter_region p {
+    letter-spacing: .5px;
+    color: white;
+}
+
+.btn_filter_region button {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    height: 20px;
+}
+
+.drop_filter_region {
+    position: absolute;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .3);
+    top: 4rem;
+    padding: 17px 14px;
+    background-color: var(--el-dark-blue);
+    width: 100%;
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+.drop_filter_region button {
+    margin: 5px 0;
+    background-color: var(--el-dark-blue);
+    width: 100%;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.hide {
+    display: none;
+}
+
+.middle_body_home {
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
